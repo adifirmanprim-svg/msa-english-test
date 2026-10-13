@@ -1,0 +1,32 @@
+:root {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: #12243a;
+  background: #f3f7fb;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.page { max-width: 1120px; margin: 0 auto; padding: 48px 22px 28px; }
+.hero {
+  padding: 56px 42px; border-radius: 24px;
+  background: linear-gradient(130deg, #102b50, #176b75);
+  color: white; box-shadow: 0 18px 42px rgba(16, 43, 80, .16);
+}
+.badge { display: inline-block; padding: 8px 12px; border: 1px solid #8ed5d0; border-radius: 999px; font-size: 12px; letter-spacing: 1.3px; color: #b9f1e8; }
+h1 { font-size: clamp(36px, 6vw, 62px); line-height: 1.05; margin: 22px 0 12px; }
+h2 { font-size: clamp(18px, 3vw, 27px); font-weight: 500; margin: 0; color: #d8f3f0; }
+.intro { max-width: 670px; font-size: 18px; line-height: 1.7; color: #e7f2f6; margin: 22px 0; }
+.status { display: inline-flex; align-items: center; gap: 9px; padding: 10px 14px; border-radius: 10px; background: rgba(255,255,255,.12); font-size: 14px; }
+.dot { width: 9px; height: 9px; background: #8ff0b2; border-radius: 50%; }
+.credit { margin: 30px 0 0; color: #d8f3f0; font-weight: 600; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 24px; }
+.card { background: white; padding: 24px; border-radius: 18px; box-shadow: 0 8px 26px rgba(16, 43, 80, .06); }
+.icon { color: #087c82; font-weight: 800; font-size: 14px; letter-spacing: 1px; }
+.card h3 { margin: 14px 0 8px; font-size: 20px; }
+.card p { margin: 0; color: #526276; line-height: 1.65; }
+footer { text-align: center; color: #718096; font-size: 13px; margin-top: 28px; }
+@media (max-width: 760px) {
+  .page { padding: 20px 14px; }
+  .hero { padding: 34px 22px; }
+  .cards { grid-template-columns: 1fr; }
+  .intro { font-size: 16px; }
+}
